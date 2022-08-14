@@ -1,5 +1,4 @@
 //Definición de clases
-
 class Courses {
     constructor({
         id,
@@ -7,8 +6,21 @@ class Courses {
         classes = []
     }){
         this.id = id;
-        this.name = name;
+        this._name = name; //Con guion bajo no se puede llamar a este atributo desde afuera (privated)
         this.classes = classes;
+    }
+
+    get name(){
+        return this._name; 
+    }
+    set name(nuevoNombre){
+        if(nuevoNombre === "Curso pesimo de programación Básica"){
+            console.error("weeey... no chingues");
+        }
+        else{
+            this._name = nuevoNombre;
+        }
+        
     }
 }
 

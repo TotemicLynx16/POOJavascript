@@ -1,0 +1,9 @@
+-Esconder métodos y atributos
+-No permitir la alteración de métodos y atributos
+
+formas de encapsular en JS
+
+-Getters y Setters
+-Modulos de ES6
+-Namespaces
+-Object.defineProperties
